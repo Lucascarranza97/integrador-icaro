@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    
+    <link rel="stylesheet" href="estilos.css">
+
+    <title>Formulario Login y Registro de Usuarios</title>
+</head>
+<body>
+<header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul>
+                <li width="20%" align="center"><a href="#">empresa</a></li>
+                <li width="20%" align="center"><a href="#">servicios</a></li>
+                <li width="20%" align="center"><a href="#">contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Formularios -->
+    <div class="contenedor-formularios">
+        <!-- Links de los formularios -->
+        <ul class="contenedor-tabs">
+            <li class="tab tab-segunda active"><a href="ingreso.html">Iniciar Sesión</a></li>
+            <li class="tab tab-primera"><a href="registrar.html">Registrarse</a></li>
+        </ul>
+<!-- Registrarse -->
+<div id="registrarse">
+    <h1>Registrarse</h1>
+    <form action="#" method="post">
+        <div class="fila-arriba">
+            <div class="contenedor-input">
+                <label>
+                    Nombre <span class="req">*</span>
+                </label>
+                <input type="text" required >
+            </div>
+
+            <div class="contenedor-input">
+                <label>
+                    Apellido <span class="req">*</span>
+                </label>
+                <input type="text" required>
+            </div>
+        </div>
+        <div class="contenedor-input">
+            <label>
+                Usuario <span class="req">*</span>
+            </label>
+            <input type="text" required>
+        </div>
+        <div class="contenedor-input">
+                <label>
+                    Email <span class="req">*</span>
+                </label>
+            <input type="email" required>
+        </div>
+        <div class="contenedor-input">
+            <label>
+                Contraseña <span class="req">*</span>
+            </label>
+            <input type="password" required>
+        </div>
+
+        <div class="contenedor-input">
+            <label>
+                Repetir Contraseña <span class="req">*</span>
+            </label>
+            <input type="password" required>
+        </div>
+    </div>
+    <div class="inpm-select">
+       <i class="fa-solid fa-earth-americas icon"></i>
+       <label name= "label-select" for="selccione su pais">Seleccione su pais</label>
+<select>
+ <option selected disabled>..........</option>
+           <option value="Argentina">Argentina</option>
+           <option value="Colombia">Colombia</option>
+           <option value="Chile">Chile</option>
+           <option value="Ecuador">Ecuador</option>
+           <option value="Uruguay">Uruguay</option>
+           <option value="Paraguay">Paraguay</option>
+           <option value="Venezuela">Venezuela</option>
+       </select>
+   </div>
+   <div class="inpm-select">
+       <i class="fa-sharp fa-solid fa-city"></i>
+       <label name= "label-select" for="selccione su ciudad">Seleccione su ciudad</label>
+<select>
+ <option selected disabled>..........</option>
+ <option value="Cruz del eje">Cruz del eje</option>
+           <option value="Carlos paz">Carlos paz</option>
+           <option value="Cordoba">Cordoba</option>
+       </select>
+   </div>
+    <input type="submit" value="Registrate" class="button">
+    <p>Al registrarte, aceptas nuestras Condiciones de uso y Política de privacidad.</p>
+    <p>¿Ya tienes una cuenta?<a class="link" href="loginvista.html">Iniciar Sesion</a></p>
+</div>
+
+        <input type="submit" class="button button-block" value="Registrarse">
+    </form>
+</div>
+</div>
+</div>
